@@ -29,8 +29,6 @@ eventController.chosenEvent = (req, res, next) => {
     }
 };
 
-
-
 // eventController.getCity = (req, res, next) => {
 //     Event.find({}, (err, cityList) => {
 //         if(err){
@@ -42,4 +40,5 @@ eventController.chosenEvent = (req, res, next) => {
 //         return next;
 //     })
 // }
-export default eventCrontroller;
+
+export default eventController;

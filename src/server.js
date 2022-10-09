@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //when user clicks on a city, this re-routes user to that city's events
 eventRoute.get('/', eventController.getEvents, (req, res) => {
-    return res.status(200).json(res.locals.eventList);
+    return res.status(200).json(res.locals.events);
 });
 
 //when user clicks on a certain event w/in that city's events, they are redirected to that event's details
