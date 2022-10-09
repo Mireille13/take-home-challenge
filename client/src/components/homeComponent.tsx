@@ -19,3 +19,5 @@ useEffect(() => {
         )
     }
 })
+
+export default homeComponent;

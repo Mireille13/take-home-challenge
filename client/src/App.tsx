@@ -1,22 +1,23 @@
+//to have access to React library and hooks
 import React, {useState, useEffect} from 'react';
-//import {useNavigate} from 'react-router-dom';
+//to enable dynamic routing in app
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import './assets/stylesheets/styles.scss'
 import '../src/assets/webfonts/Nunito/Nunito-Black.ttf'
 
 
-//import Home from './components/homeComponent';
+import Home from './components/homeComponent';
+//create eventsComponent and import as Events
 
 const App = () => {
-  // const navigate = useNavigate();
-
-  // const navigateToCityEvents = () => {
-  //   navigate()
-  // }
-  const [component, homeComponent] = React.useState(<Home />);
   return(
-    <div id='homeComponent'></div>
-  );
+    <Router>
+      <div>
+       <Home />
+      </div>
+   </Router>
+   );
   //return <p style={{color: 'white'}}>Good Luck!</p>
 }
 
